@@ -1,4 +1,10 @@
 users_name=input("Hey, what's your name?: ")
-print(f"Welcome {users_name}! \nYou are at currently at the train station. "
-      f"\nYou have 15 min before you're train arrives. "
-      f"\nThe train you're about to take is headed for Bloomsbury Park, NC. ")
+friend1=input("who will be your friend on this journey:")
+friend2=input("who will be your friend on this journey:")
+friend3=input("who will be your friend on this journey:")
+friend4=input("who will be your friend on this journey:")
+print(f"Welcome {users_name}! \nAt 1am you and a few friends take a train to go towards Bloomsbury amusment park "
+      f"\nYou hear the conductor say have \"15 min before you're train reaches it destination.\" ")
+print(f'You, {friend1},{friend2},{friend3},and {friend4} get off the train then leave the train station. Yall begin to walk towards the abandoned Bloomsbury amusment park')
+print(f'While walking towards Bloomsbury {friend3} points out a rugged gas station')
+gasinput= input("Will you enter the gas station?:yes or no")
