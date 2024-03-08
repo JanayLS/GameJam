@@ -1,6 +1,7 @@
 from gasstation import *
 from hp_checker import *
-
+from teagether import *
+bandage=0
 hp=10
 users_name = input("Hey, what's your name?: ")
 friend1 = input("who will be your friend on this journey:")
@@ -31,13 +32,20 @@ if homeless == 'yes':
     print(
         "you approach the homeless guy, then he reaches in his coat then rapidly wips out a apple, you look at him in confusion then he says\"ever wanted to see light?\"")
     hp -= 8
-    print(f'he pounces on you then vigerasly begins to stab you in vigerosly all over you take(here is your hp:{hp})')
+    print(f'then he pounces on you then and begins to vigerosly stab you all over (here is your hp:{hp})')
+    hp_checker(hp, bandage)
 
 elif homeless == 'no':
     print("you ignore the old homeless man you approach the gate of the park")
 
+print(f'you and your friends enter the park then suddenly {friend1} says the most scooby-doo type s##t ever \"we should split up\" ' )
+split = input("would you like to split up in groups (yes or no)")
 
 
+if split == 'yes':
+    print(f"you,{friend1}and{friend4}go togther while the other go there seperate ways")
 
-hp_checker(hp, bandage)
+elif split =='no':
+    print("you say \"We aint doin that dumbass s##t,OK \"")
+
 
