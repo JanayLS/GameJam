@@ -6,10 +6,13 @@ def hp_checker(hp,bandage):
         hp_input = input("would you like to use bandages?(yes or no)")
         if hp_input == 'yes':
             hp = 10
+            bandage -= 1
             print(hp)
         elif hp_input == 'no':
             print("womp womp you dumb arnt you")
     elif hp <= 2:
         print("you are feeling the affects of all your injuries better find bandages")
-
+    if hp <= 0:
+        print("you have parished at the hands of unknown forces, guess you were not good enough")
+        quit()
 
